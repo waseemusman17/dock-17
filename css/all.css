@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@font-face {
+  font-family: "Bulter Light";
+  src: url("../fonts/butler-light.otf");
+}
+
+
+:root{
+
+    /* Reset 1rem = 10px */
+    font-size:10px;
+  
+    /* Basic colors */
+    --white:#FFFFFF;
+    --black:#2C2A27;
+
+    --grey:#EDECE7;
+}
+  
+body {
+    margin: 0;
+    font: 14px/1.4 "Roboto", sans-serif;
+    color: #000;
+    background: #f5f4ef;
+    overflow-x: hidden;
+}
+  
+input,
+textarea,
+button {
+    font-family: "Roboto", sans-serif;
+    outline: none;
+}
+  
+button,
+input[type="submit"],
+input[type="reset"] {
+    cursor: pointer;
+}
+  
+.btn-primary {
+    width: 180px;
+    display: inline-block;
+    vertical-align: top;
+    color: #ef804d;
+    font-size: 16px;
+    padding: 8px;
+    font-family: "Roboto";
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+  
+.relative {
+    position: relative;
+}
+  
+  /* Flex Properties */
+  
+.flex {
+    display: flex;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.h-center {
+    justify-content: center;
+}
+.v-center {
+    align-items: center;
+}
+.flex-start {
+    align-items: flex-start;
+}
+.flex-bottom {
+    align-items: flex-end;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-row {
+    flex-direction: row;
+}
+
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+
+.ml-auto {
+    margin-left: auto !important;
+}
+.mr-auto {
+    margin-right: auto;
+}
+
+input,
+select {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: #1b2642;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+}
+.transition {
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+}
+.list-none {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Bulter Light", sans-serif;
+    color: #9bb5c4;
+}
+
+#wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
