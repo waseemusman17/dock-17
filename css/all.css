@@ -15,6 +15,7 @@
     --black:#2C2A27;
 
     --grey:#EDECE7;
+    --orange:#EC9548;
 }
   
 body {
@@ -89,6 +90,9 @@ input[type="reset"] {
 .text-right {
     text-align: right;
 }
+.uppercase{
+    text-transform: uppercase;
+}
 
 .ml-auto {
     margin-left: auto !important;
@@ -140,3 +144,14 @@ h6 {
     overflow: hidden;
 }
 
+
+/* Header Content */
+
+
+/* Hero Banner */
+.hero-banner {
+    position: relative;
+    height: 780px;
+    background-size: cover;
+    background-position: center;
+}
