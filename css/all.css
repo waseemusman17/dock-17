@@ -66,7 +66,7 @@ input[type="reset"] {
     border-color: var(--orange);
 }
 .btn-secondary{
-    width: 150px;
+    width: 160px;
     display: inline-block;
     vertical-align: middle;
     color: var(--white);
@@ -103,10 +103,10 @@ input[type="reset"] {
 .v-center {
     align-items: center;
 }
-.flex-start {
+.v-start {
     align-items: flex-start;
 }
-.flex-bottom {
+.v-end {
     align-items: flex-end;
 }
 .flex-column {
@@ -133,6 +133,10 @@ input[type="reset"] {
     margin-right: auto;
 }
 
+.col-2{
+    width: 20%;
+    max-width: 20%;
+}
 .col-3{
     width: 33%;
     max-width: 33%;
@@ -140,6 +144,14 @@ input[type="reset"] {
 .col-5{
     width: 50%;
     max-width: 50%;
+}
+.col-7{
+    width: 70%;
+    max-width: 70%;
+}
+.col-8{
+    width: 80%;
+    max-width: 80%;
 }
 
 input,
@@ -184,12 +196,18 @@ h6 {
 .letter-space{
     letter-spacing: 0.28em;
 }
+span{
+    font-size: 12px;
+}
 
 .white{
     color: var(--white);
 }
 .black{
     color: var(--black);
+}
+.opacity-8{
+    opacity: 0.8;
 }
 
 #wrapper {
@@ -278,7 +296,16 @@ h3{
 /* Other Business  */
 .other-business {
     padding: 40px 0;
+    background-color: rgba(237,236,231,0.5);
 }
 .other-content img {
     opacity: 0.5;
+}
+
+/* About Us Section */
+.about-us{
+    padding: 90px 0;
+}
+.about-content p{
+    font-size: 18px;
 }
