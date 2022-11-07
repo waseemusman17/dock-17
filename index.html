@@ -17,33 +17,39 @@
 
     <div id="warpper">
 
-        <header id="header">
+        <header id="header" class="site-header">
             <div class="container">
-                <div class="header-content flex">
-                    <a href="#">
+                <div class="header-content flex h-between v-center">
+                    <a href="#" class="btn-secondary flex v-center">
                         <span>gift card</span>
                         <svg width="25" height="12" viewBox="0 0 25 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M24.7029 5.41694V5.84236C22.2912 6.36611 20.5403 8.80535 19.8205 11.2286C19.8201 11.2302 19.5238 11.1288 19.515 11.1259C19.5062 11.1229 19.5248 11.1274 19.5253 11.1255C20.0708 9.27179 20.6697 7.21837 22.1822 5.88163C18.3221 5.97175 15.6769 6.11507 12.4857 6.1313L12.4849 6.1313C8.77838 6.15016 5.0748 6.169 0.328508 6.30342L0 6.31272V4.92116L22.1822 5.34694C20.6697 4.0102 20.0752 1.97718 19.5253 0.103058C19.5253 0.103058 19.2096 0.206695 19.5149 0.103396C19.8203 9.74353e-05 19.8203 0 19.8203 0C20.5337 2.42798 22.2908 4.89309 24.7029 5.41694Z" fill="white"/>
                         </svg>                            
                     </a>
-                    <div class="flex">
+                    <div class="flex v-center">
                         <nav>
-                            <ul>
+                            <ul class="list-none flex">
                                 <li><a href="">Home</a></li>
-                                <li><a href="">menu</a></li>
+                                <li class="menu-item-has-children">
+                                    <a href="">menu</a>
+                                    <ul class="sub-menu list-none">
+                                        <li><a href="">Menu 1</a></li>
+                                        <li><a href="">Menu 1</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </nav>
                         <a href="/index.html">
                             <img src="./images/logo.svg" alt="logo">
                         </a>
                         <nav>
-                            <ul>
+                            <ul class="list-none flex">
                                 <li><a href="">about us</a></li>
                                 <li><a href="">join us</a></li>
                             </ul>
                         </nav>
                     </div>
-                    <a href="#">
+                    <a href="#" class="btn-secondary flex v-center">
                         <span>reservation</span>
                         <svg width="25" height="12" viewBox="0 0 25 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M24.7029 5.41694V5.84236C22.2912 6.36611 20.5403 8.80535 19.8205 11.2286C19.8201 11.2302 19.5238 11.1288 19.515 11.1259C19.5062 11.1229 19.5248 11.1274 19.5253 11.1255C20.0708 9.27179 20.6697 7.21837 22.1822 5.88163C18.3221 5.97175 15.6769 6.11507 12.4857 6.1313L12.4849 6.1313C8.77838 6.15016 5.0748 6.169 0.328508 6.30342L0 6.31272V4.92116L22.1822 5.34694C20.6697 4.0102 20.0752 1.97718 19.5253 0.103058C19.5253 0.103058 19.2096 0.206695 19.5149 0.103396C19.8203 9.74353e-05 19.8203 0 19.8203 0C20.5337 2.42798 22.2908 4.89309 24.7029 5.41694Z" fill="white"/>
@@ -55,25 +61,50 @@
 
         <main id="main">
 
-            <section class="hero-banner flex h-center v-center" style="background-image: url('./images/banner.png');">
+            <!-- Hero Banner -->
+            <section class="hero-banner flex h-center v-center text-center" style="background-image: url('./images/banner.png');">
                 <div class="container">
                     <div class="banner-content">
-                        <span class="uppercase">clarksville / tennessee</span>
-                        <h1 class="uppercase">dock 17</h1>
-                        <h3 class="uppercase">burgers brews & brunch</h3>
-                        <div class="hero-banner_btn flex">
-                            <a href="">
+                        <span class="uppercase letter-space white">clarksville / tennessee</span>
+                        <h1 class="uppercase white">dock 17</h1>
+                        <h3 class="uppercase white letter-space">burgers brews & brunch</h3>
+                        <div class="hero-banner_btn flex h-center">
+                            <a href="" class="btn-primary">
                                 <span>reservation</span>
                                 <svg width="25" height="12" viewBox="0 0 25 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M24.7029 5.41694V5.84236C22.2912 6.36611 20.5403 8.80535 19.8205 11.2286C19.8201 11.2302 19.5238 11.1288 19.515 11.1259C19.5062 11.1229 19.5248 11.1274 19.5253 11.1255C20.0708 9.27179 20.6697 7.21837 22.1822 5.88163C18.3221 5.97175 15.6769 6.11507 12.4857 6.1313L12.4849 6.1313C8.77838 6.15016 5.0748 6.169 0.328508 6.30342L0 6.31272V4.92116L22.1822 5.34694C20.6697 4.0102 20.0752 1.97718 19.5253 0.103058C19.5253 0.103058 19.2096 0.206695 19.5149 0.103396C19.8203 9.74353e-05 19.8203 0 19.8203 0C20.5337 2.42798 22.2908 4.89309 24.7029 5.41694Z" fill="white"/>
                                 </svg>                                    
                             </a>
-                            <a href="">
-                                <span>reservation</span>
+                            <a href="" class="btn-primary">
+                                <span>see our menu</span>
                                 <svg width="25" height="12" viewBox="0 0 25 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M24.7029 5.41694V5.84236C22.2912 6.36611 20.5403 8.80535 19.8205 11.2286C19.8201 11.2302 19.5238 11.1288 19.515 11.1259C19.5062 11.1229 19.5248 11.1274 19.5253 11.1255C20.0708 9.27179 20.6697 7.21837 22.1822 5.88163C18.3221 5.97175 15.6769 6.11507 12.4857 6.1313L12.4849 6.1313C8.77838 6.15016 5.0748 6.169 0.328508 6.30342L0 6.31272V4.92116L22.1822 5.34694C20.6697 4.0102 20.0752 1.97718 19.5253 0.103058C19.5253 0.103058 19.2096 0.206695 19.5149 0.103396C19.8203 9.74353e-05 19.8203 0 19.8203 0C20.5337 2.42798 22.2908 4.89309 24.7029 5.41694Z" fill="white"/>
                                 </svg>                                    
                             </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Our Other Businesses! -->
+            <section class="other-business">
+                <div class="container">
+                    <div class="other-content flex">
+                        <div class="col-5">
+                            <h2 class="black uppercase">our other businesses!</h2>
+                        </div>
+                        <div class="col-5">
+                            <div class="flex h-between">
+                                <div class="col-3 text-center">
+                                    <img src="./images/client-1.png" alt="">
+                                </div>
+                                <div class="col-3 text-center">
+                                    <img src="./images/client-2.png" alt="">
+                                </div>
+                                <div class="col-3 text-center">
+                                    <img src="./images/client-3.png" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
