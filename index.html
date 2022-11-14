@@ -8,8 +8,9 @@
 
     <title>Home - Dock 17</title>
 
-    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
+
     <link rel="stylesheet" href="./css/all.css">
 
 </head>
@@ -61,7 +62,6 @@
 
         <main id="main">
 
-            <!-- Hero Banner -->
             <section class="hero-banner flex h-center v-center text-center" style="background-image: url('./images/banner.png');">
                 <div class="container">
                     <div class="banner-content">
@@ -86,7 +86,6 @@
                 </div>
             </section>
 
-            <!-- Our Other Businesses! -->
             <section class="other-business">
                 <div class="container">
                     <div class="other-content flex">
@@ -110,7 +109,6 @@
                 </div>
             </section>
 
-            <!-- About Us -->
             <section class="about-us">
                 <div class="container">
                     <div class="about-content flex v-center">
@@ -134,7 +132,6 @@
                 </div>
             </section>
 
-            <!-- Reservations -->
             <section class="reservations-section">
                 <div class="container">
                     <div class="reservations-content">
@@ -157,6 +154,43 @@
                 </div>
             </section>
 
+            <section class="filter--section">
+                <div class="container">
+                    <div class="filter--content">
+
+                        <div class="button-group filters-button-group flex v-center h-center">
+                            <button class="filter--button letter-space uppercase black is-checked" data-filter="*">All</button>
+                            <button class="filter--button letter-space uppercase black" data-filter=".filter-1">dinner</button>
+                            <button class="filter--button letter-space uppercase black" data-filter=".filter-2">brunch</button>
+                            <button class="filter--button letter-space uppercase black" data-filter=".filter-3">drinks</button>
+                        </div>
+
+                        <div class="grid">
+
+                            <div class="element-item transition filter-1" data-category="transition">
+                                <div class="item-image" style="background-image: url('./images/filtrer-1.png')"></div>
+                            </div>
+                            <div class="element-item transition filter-1" data-category="transition">
+                                <div class="item-image" style="background-image: url('./images/filtrer-2.png')"></div>
+                            </div>
+                            <div class="element-item transition filter-2" data-category="transition">
+                                <div class="item-image" style="background-image: url('./images/filtrer-3.png')"></div>
+                            </div>
+                            <div class="element-item transition filter-2" data-category="transition">
+                                <div class="item-image" style="background-image: url('./images/filtrer-4.png')"></div>
+                            </div>
+                            <div class="element-item transition filter-3" data-category="transition">
+                                <div class="item-image" style="background-image: url('./images/filtrer-5.png')"></div>
+                            </div>
+                            <div class="element-item transition filter-3" data-category="transition">
+                                <div class="item-image" style="background-image: url('./images/filtrer-6.png')"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
 
         </main>
 
@@ -168,6 +202,7 @@
     
 
     <script src="./js/jquery.min.js"></script>
+    <script src="./js/isotope.pkgd.js"></script>
     <script src="./js/custom.js"></script>
 
 </body>
